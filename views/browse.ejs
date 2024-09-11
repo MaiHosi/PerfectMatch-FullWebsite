@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giveaway a Pet</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/q8style.css"> 
+</head>
+<body>
+    <%- include('partials/header')%> 
+    <div class="main">
+        <h1>Find your furry companion!</h1>
+        <fieldset class="cat">
+            <legend class="typeCat" style="font-size: 15pt">Available Cats</legend>
+            <table class="catProfile">
+                <tr>
+                    <td><img src="/images/images_q8/cat1.png" alt="cat1" width="175" height="175"></td>
+                    <td><img src="/images/images_q8/cat2.jpg" alt="cat2" width="175" height="175"></td>
+                    <td><img src="/images/images_q8/cat3.png" alt="cat3" width="175" height="175"></td>
+                </tr>
+                <tr class="catNameRow1" style="text-align: center">
+                    <td>Yoko
+                        <form action="DogOrCat" style="display:inline;">
+                            <button class="button">Interested</button>
+                        </form>
+                        <ul style="text-align:left;">
+                            <li>Gender: Male</li>
+                            <li>Breed: Scottish Fold</li>
+                            <li>Age: 3 years old</li>
+                            <li>Very goofy cat</li>
+                            <li>Gets along with all</li>
+                        </ul>
+                    </td>
+                    <td>Fuego
+                        <form action="DogOrCat" style="display:inline;">
+                            <button class="button">Interested</button>
+                        </form>
+                        <ul style="text-align:left;">
+                            <li>Gender: Male</li>
+                            <li>Breed: Bengal</li>
+                            <li>Age: 10 years old</li>
+                            <li>Calm & purrs a lot</li>
+                            <li>Doesn't get along with kids</li>
+                        </ul>
+                    </td>
+                    <td>Yuki
+                        <form action="DogOrCat" style="display:inline;">
+                            <button class="button">Interested</button>
+                        </form>
+                        <ul style="text-align: left;">
+                            <li>Gender: Female</li>
+                            <li>Breed: British shorthair </li>
+                            <li>Age: 1 month</li>
+                            <li>Very playful</li>
+                            <li>Loves everyone</li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><img src="/images/images_q8/cat4.png" alt="cat1" width="175" height="175"></td>
+                    <td><img src="/images/images_q8/cat5.png" alt="cat2" width="175" height="175"></td>
+                    <td><img src="/images/images_q8/cat6.png" alt="cat3" width="175" height="175"></td>
+                </tr>
+                <tr class="catNameRow2" style="text-align: center">
+                    <td>Ben
+                        <form action="DogOrCat" style="display:inline;">
+                            <button class="button">Interested</button>
+                        </form>
+                        <ul style="text-align:left">
+                            <li>Gender: Male</li>
+                            <li>Breed: Persian</li>
+                            <li>Age: 2 years old</li>
+                            <li>A bit grumpy like his face</li>
+                            <li>Gets along with dogs</li>
+                        </ul>
+                    </td>
+                    <td>Mimo
+                        <form action="DogOrCat" style="display:inline;">
+                            <button class="button">Interested</button>
+                        </form>
+                        <ul style="text-align:left">
+                            <li>Gender: Female</li>
+                            <li>Breed: Scottish Fold</li>
+                            <li>Age: 8 months</li>
+                            <li>Very cute & loves getting pet</li>
+                            <li>Gets along with cats & children</li>
+                        </ul>
+                    </td>
+                    <td> Moki
+                        <form action="DogOrCat" style="display:inline;">
+                            <button class="button">Interested</button>
+                        </form>
+                        <ul style="text-align:left">
+                            <li>Gender: Female</li>
+                            <li>Breed: Ragdoll </li>
+                            <li>Age: 1 year old</li>
+                            <li>Hides in small corners</li>
+                            <li>Loves children</li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><img src="/images/images_q8/cat7.jpg" alt="cat1" width="175" height="175"></td>
+                    <td><img src="/images/images_q8/cat8.png" alt="cat2" width="175" height="175"></td>
+                    <td><img src="/images/images_q8/cat9.png" alt="cat3" width="175" height="175"></td>
+                </tr>
+                <tr class="catNameRow3" style="text-align: center">
+                    <td>Mushu
+                        <form action="DogOrCat" style="display:inline;">
+                            <button class="button">Interested</button>
+                        </form>
+                        <ul style="text-align:left">
+                            <li>Gender: Male</li>
+                            <li>Breed: Russian blue </li>
+                            <li>Age: 8 years old</li>
+                            <li>Calm & loves being outside</li>
+                            <li>Gets along with all</li>
+                        </ul>
+                    </td>
+                    <td>Taro
+                        <form action="DogOrCat" style="display:inline;">
+                            <button class="button">Interested</button>
+                        </form>
+                        <ul style="text-align:left">
+                            <li>Gender: Male</li>
+                            <li>Breed: Burmese </li>
+                            <li>Age:  2 months</li>
+                            <li>Brother of Mimo</li>
+                            <li>Calm but playful</li>
+                        </ul>
+                    </td>
+                    <td>Akio
+                        <form action="DogOrCat" style="display:inline;">
+                            <button class="button">Interested</button>
+                        </form>
+                        <ul style="text-align:left">
+                            <li>Gender: Male</li>
+                            <li>Breed: Burmese </li>
+                            <li>Age: 4 year old</li>
+                            <li>Loves to eat snacks</li>
+                            <li>Hates children</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+
+
+        <fieldset class="dog">
+            <legend class="typeDog" style="font-size: 15pt">Available Dogs</legend>
+            <table class="dogProfile">
+                <tr>
+                    <td><img src="/images/images_q8/dog1.png" alt="dog1" width="175" height="175"></td>
+                    <td><img src="/images/images_q8/dog2.png" alt="cat2" width="175" height="175"></td>
+                    <td><img src="/images/images_q8/dog3.png" alt="cat3" width="175" height="175"></td>
+                </tr>
+                <tr class="dogNameRow1" style="text-align:center">
+                    <td>Yori
+                        <form action="DogOrCat" style="display:inline;">
+                            <button class="button">Interested</button>
+                        </form>
+                        <ul style="text-align:left">
+                            <li>Gender: Male</li>
+                            <li>Breed: Shiba </li>
+                            <li>Age: 4 year old</li>
+                            <li>Loves to eat snacks </li>
+                            <li>Gets along with everyone</li>
+                        </ul>
+                    </td>
+
+                    <td>Robert 
+                        <form action="DogOrCat" style="display:inline;">
+                            <button class="button">Interested</button>
+                        </form>
+                        <ul style="text-align:left">
+                            <li>Gender: Male</li>
+                            <li>Breed: American Staffordshire </li>
+                            <li>Age: 2 year old</li>
+                            <li>Very goofy & loves taking pictures</li>
+                            <li>Gets along with dogs only</li>
+                        </ul>
+                    </td>
+                    <td>Jimmy
+                        <form action="DogOrCat" style="display:inline;">
+                            <button class="button">Interested</button>
+                        </form>
+                        <ul style="text-align:left">
+                            <li>Gender: Male</li>
+                            <li>Breed: Chihuahua </li>
+                            <li>Age: 10 year old</li>
+                            <li>Grumpy & Growly</li>
+                            <li>Hates children</li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><img src="/images/images_q8/dog4.png" alt="dog1" width="175" height="175"></td>
+                    <td><img src="/images/images_q8/dog5.png" alt="cat2" width="175" height="175"></td>
+                    <td><img src="/images/images_q8/dog6.png" alt="cat3" width="175" height="175"></td>
+                </tr>
+                <tr class="dogNameRow2" style="text-align:center">
+                    <td>Bushka
+                        <form action="DogOrCat" style="display:inline;">
+                            <button class="button">Interested</button>
+                        </form>
+                        <ul style="text-align:left">
+                            <li>Gender: Female</li>
+                            <li>Breed: Pitbull </li>
+                            <li>Age: 1 year old</li>
+                            <li>Very Playful</li>
+                            <li>Loves everyone</li>
+                        </ul>
+                    </td>
+                    <td>Queen
+                        <form action="DogOrCat" style="display:inline;">
+                            <button class="button">Interested</button>
+                        </form>
+                        <ul style="text-align:left">
+                            <li>Gender: Female</li>
+                            <li>Breed: Shih-Tzu </li>
+                            <li>Age: 6 year old</li>
+                            <li>Gets moody but still nice</li>
+                            <li>Gets along with cats</li>
+                        </ul>
+                    </td>
+                    <td>Kyo
+                        <form action="DogOrCat" style="display:inline;">
+                            <button class="button">Interested</button>
+                        </form>
+                        <ul style="text-align:left">
+                            <li>Gender: Female</li>
+                            <li>Breed: Golden Retriever</li>
+                            <li>Age: 2 months</li>
+                            <li>Very Playful</li>
+                            <li>Loves everyone</li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><img src="/images/images_q8/dog7.jpg" alt="dog1" width="175" height="175"></td>
+                    <td><img src="/images/images_q8/dog8.jpg" alt="dog2" width="175" height="175"></td>
+                    <td><img src="/images/images_q8/dog9.jpg" alt="dog3" width="175" height="175"></td>
+                </tr>
+                    
+                <tr class="dogNameRow3" style="text-align:center">
+                    <td>Rambo
+                        <form action="DogOrCat" style="display:inline;">
+                            <button class="button">Interested</button>
+                        </form>
+                        <ul style="text-align:left">
+                            <li>Gender: Male</li>
+                            <li>Breed: Shih-Tzu </li>
+                            <li>Age: 10 year old</li>
+                            <li>Goofy and a bit lost</li>
+                            <li>Gets along with children</li>
+                        </ul>
+                    </td>
+                    <td>Mika
+                        <form action="DogOrCat" style="display:inline;">
+                            <button class="button">Interested</button>
+                        </form>
+                        <ul style="text-align:left">
+                            <li>Gender: Female</li>
+                            <li>Breed: Pomaranian </li>
+                            <li>Age: 11 year old</li>
+                            <li>Very cakm and listens well</li>
+                            <li>Gets along with humans only</li>
+                        </ul>
+                    </td>
+                    <td>Mucci
+                        <form action="DogOrCat" style="display:inline;">
+                            <button class="button">Interested</button>
+                        </form>
+                        <ul style="text-align:left">
+                            <li>Gender: Female</li>
+                            <li>Breed: Poodle </li>
+                            <li>Age: 2 year old</li>
+                            <li>Very energetic and playful</li>
+                            <li>Gets along with everyone</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </div>
+
+    <%- include('partials/footer') %> 
+    <script src="/js/giveAway.js"></script> 
+</body>
+</html>
+
+

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create an Account</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/q8style.css"> 
+</head>
+<body>
+    <%- include('partials/header') %>    
+    <div class="main">
+        <h1>Create an Account</h1>
+
+        <% if (typeof success !== 'undefined' && success) { %>
+            <p class="success"><%= success %></p>
+        <% } %>
+
+        <% if (typeof error !== 'undefined' && error) { %>
+            <p class="error"><%= error %></p>
+        <% } %>
+
+        <form id="createAccountForm" action="/register" method="POST">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <br><br>
+            <button class="button" type="submit">Create Account</button>
+        </form>
+    </div>
+        
+    <%- include('partials/footer') %> 
+    <script src="/js/account.js"></script>
+</body>
+</html>
+

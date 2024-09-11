@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logged Out</title>
+    <link rel="stylesheet" href="/css/q8style.css"> 
+    <style>
+        .logout-message {
+            text-align: center;
+            margin-top: 100px;
+        }
+        .check-mark {
+            margin-top: 300px;
+            font-size: 100px;
+            color: green;
+        }
+        .button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 18px;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <%- include('partials/header') %> 
+    
+    <div class="logout-message">
+        <div class="check-mark">✔</div>
+        <h1>You've been logged out</h1>
+        <a href="/" class="button">Go Back to Homepage</a>
+        <a href="/login" class="button">Log Back In</a>
+        
+    </div>
+
+    <%- include('partials/footer') %> 
+</body>
+</html>

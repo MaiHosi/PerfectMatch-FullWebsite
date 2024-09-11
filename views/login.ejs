@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/css/q8style.css">
+    <script>
+        function validateLoginForm() {
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            if (username.trim() === '' || password.trim() === '') {
+                alert('Username and password are required.');
+                return false;
+            }
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <%- include('partials/header')%>    
+    <div class="main">
+        <h1>Login</h1>
+
+        <% if (typeof success !== 'undefined' && success) { %>
+            <p class="success"><%= success %></p>
+        <% } %>
+
+        <% if (typeof error !== 'undefined' && error) { %>
+            <p class="error"><%= error %></p>
+        <% } %>
+
+        <form action="/login" method="post" onsubmit="return validateLoginForm()">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username"><br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password"><br><br>
+            <button class="button" type="submit" value="Login">Login</button>
+        </form>
+        <p><a href="/create_account">Create an account</a></p>
+    </div>
+    <%- include('partials/footer') %>
+</body>
+</html>
+
+
+

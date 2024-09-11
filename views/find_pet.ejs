@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find a Pet</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/q8style.css">
+</head>
+<body>
+    <%- include('partials/header') %>
+    <div class="main">
+        <h1>Looking to Adopt?</h1>
+        <h3>Please fill this survey to help us find your furry companion!</h3>
+        <fieldset>
+            <form id="adoptForm" action="/browse" method="POST">
+                <p id="petTypeQuestion">What pet are you searching for?</p>
+                <label><input type="radio" name="petType" value="cat"> Cat </label>
+                <label><input type="radio" name="petType" value="dog"> Dog</label><br>
+
+                <p id="breedQuestion">What breed?</p>
+                <input type="text" id="breed" name="breed" size="18"><br>
+
+                <p id="ageQuestion">What is the preferred age of the pet?</p>
+                <select name="age" id="age">
+                    <option value="">Select an age</option>
+                    <option>0-3 weeks</option>
+                    <option>1-2 months</option>
+                    <option>3-6 months</option>
+                    <option>6 months - 1 year old</option>
+                    <option>1 year old - 5 years old</option>
+                    <option>6 years old - 10 years old</option>
+                    <option>10+ years old</option>
+                    <option>Doesn't Matter</option>
+                </select><br>
+
+                <p id="genderQuestion">What is the preferred gender?</p>
+                <select id="gender" name="gender">
+                    <option value="">Select a gender</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Doesn't Matter</option>
+                </select><br>
+
+                <p id="getAlongQuestion">Does it need to get along with other dogs, other cats, or small children? (Pick as many as apply)</p>
+                <input type="checkbox" name="getAlong" value="Other Dogs" id="getAlong1">
+                <label for="getAlong1">Other Dogs</label>
+                <input type="checkbox" name="getAlong" value="Other Cats" id="getAlong2">
+                <label for="getAlong2">Other Cats</label>
+                <input type="checkbox" name="getAlong" value="Small Children" id="getAlong3">
+                <label for="getAlong3">Small Children</label>
+                <input type="checkbox" name="getAlong" value="Doesn't Matter" id="getAlong4">
+                <label for="getAlong4">Doesn't Matter</label><br>
+
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </form>
+        </fieldset>
+        <p>Thank you for taking the time to fill out our survey!</p>
+    </div>
+    <%- include('partials/footer') %>
+    <script src="/js/findPet.js"></script>
+</body>
+</html>

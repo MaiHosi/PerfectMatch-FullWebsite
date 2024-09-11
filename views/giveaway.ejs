@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giveaway a Pet</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/q8style.css"> 
+</head>
+
+<body>
+    <%- include('partials/header')%>
+    <div class="main">
+        <h1 class="giveaway">Have a Pet To Giveaway?</h1>
+        <img src="/images/images_q8/catdog.png" width="275" style="display: block; margin: auto" alt="cat and dog">
+        <br>
+        <p style="font-size:14pt;">Giving up a pet should be a final option. We recognize that life changes can make it challenging to care for your furry friend. 
+            Before choosing to surrender your pet, consider every alternative and make every effort to keep them in your home. 
+            There might be resources or solutions you haven't yet explored that could help you and your pet stay together. 
+            Seek advice and support to find the best possible outcome for both you and your animal companion.
+        </p> <br>
+
+
+
+        <div id="giveawaySection">
+            <h2>Complete this form to giveaway your pet</h2> <br> <br>
+
+            <form id="petForm">
+                <fieldset class="first">
+                    <legend class="info" style="font-size: 15pt;">Section 1: Your contact information</legend> <br>
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="fname" required> <br>
+                    <label for="familyname">Family Name</label>
+                    <input type="text" id="familyname" name="familyname" required> <br><br>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" size="40" required><br><br>
+                    <label for="phone">Phone Number</label>
+                    <input type="text" id="phone" name="phone" size="40" required><br><br>
+                </fieldset><br>
+
+                <fieldset class="first">
+                    <legend class="info" style="font-size: 15pt;">Section 2: Information about the animal</legend>
+                    <p id="petType">Are you giving away a dog and a cat? <br></p>
+                    <input type="radio" id="dog" name="pet" value="dog" required>
+                    <label for="dog">Dog</label> <br>
+                    <input type="radio" id="cat" name="pet" value="cat" required>
+                    <label for="cat">Cat</label> <br><br>
+
+                    <p>Which breed is your pet?</p>
+                    <select id="breed" name="breed" required>
+                        <option value="">Select Breed</option>
+                        <option>Poodle</option>
+                        <option>Shih-Tzu</option>
+                        <option>Chihuahua</option>
+                        <option>Corgi</option>
+                        <option>Shiba Inu</option>
+                        <option>Burmese Cat</option>
+                        <option>British Shorthair</option>
+                        <option>Siamese Cat</option>
+                        <option>Bengal Cat</option>
+                        <option>Mix</option>
+                    </select><br><br>
+
+                    <label for="otherBreed">If mix or another breed, please specify:</label>
+                    <input type="text" id="otherBreed" name="otherBreed"><br><br>
+
+                    <label for="age">Age of your pet</label>
+                    <input type="text" id="age" name="age" required><br><br>
+
+                    <p id="sexQuestion">Sex of your pet:</p>
+                    <input type="radio" id="female" name="sex" value="female" required>
+                    <label for="female">Female</label> <br>
+                    <input type="radio" id="male" name="sex" value="male" required>
+                    <label for="male">Male</label> <br>
+                    <input type="radio" id="sexunknown" name="sex" value="unknown" required>
+                    <label for="sexunknown">Unknown</label><br><br>
+                
+                    <p id="getAlong">Does your pet get along with other dogs, other cats, or small children? (Pick as many as apply)</p>
+                    <input type="checkbox" id="getAlong1" name="getAlong" value="Other Dogs">
+                    <label for="getAlong1">Other Dogs</label> <br>
+                    <input type="checkbox" id="getAlong2" name="getAlong" value="Other Cats">
+                    <label for="getAlong2">Other Cats</label> <br>
+                    <input type="checkbox" id="getAlong3" name="getAlong" value="Small Children">
+                    <label for="getAlong3">Small Children</label> <br>
+                    <input type="checkbox" id="getAlong4" name="getAlong" value="none">
+                    <label for="getAlong4">None</label><br><br>
+
+                    <p id="neutered">Spayed/neutered</p>
+                    <input type="radio" id="neutered1" name="neutered" value="yes" required>
+                    <label for="neutered1">Yes</label> <br>
+                    <input type="radio" id="neutered2" name="neutered" value="no" required>
+                    <label for="neutered2">No</label> <br>
+                    <input type="radio" id="neutered3" name="neutered" value="unknown" required>
+                    <label for="neutered3">Unknown</label><br><br>
+
+                    <label for="reason">Reason for abandonment</label>
+                    <textarea id="reason" name="reason" rows="2" cols="60" required></textarea><br><br>
+
+                    <label for="additionalInfo">Add any other information about your pet.</label>
+                    <textarea id="additionalInfo" name="additionalInfo" rows="4" cols="60"></textarea><br><br>
+                </fieldset><br>
+
+                <p>Thank you for taking the time to fill out our survey!</p> <br>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset"><br><br>
+            </form>
+        </div>
+
+    </div>
+
+    <%- include('partials/footer') %> 
+    <script src="/js/giveAway.js"></script> 
+</body>
+</html>
+
