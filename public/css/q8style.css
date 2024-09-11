@@ -1,0 +1,106 @@
+html {
+  font-family: "Madimi One", sans-serif;
+}
+
+.header {
+  padding: 15px;
+  text-align: left;
+  background: #8ad2e4;
+  color: rgb(0, 0, 0);
+  font-size: 40pt;
+  top:0;
+  left:0;
+  width:107.19%;
+  position: absolute;
+  z-index:3;
+}
+
+.date-time {
+  font-size: 12pt;
+  text-decoration: underline;
+}
+
+.sidenav {
+  height: 400%;
+  width: 180px;
+  position: absolute;
+  top: 152px;
+  left:0;
+  background-color: #ebadbc;
+  padding-top: 20px;
+  z-index:1;
+}
+
+.sidenav a {
+  display: block;
+  padding: 10px;
+  font-size: 13pt;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+.sidenav a:hover {
+  background-color: rgb(165, 92, 102);
+  color: rgb(241, 237, 227);
+}
+
+.main {
+  margin-left: 200px;
+  margin-top: 180px; 
+}
+
+.footer {
+  position: absolute;
+  text-align: left;
+  top: 400%;
+  padding: 50px;
+  bottom: 1;
+  left: 0;
+  z-index:10;
+  width: 100%;
+  background-color: #abbaba;
+  color: #000;
+}
+
+.cat {
+  padding:20px;
+}
+
+.catProfile {
+  text-align: center;
+  padding:30px;
+}
+
+.dog {
+  padding:20px;
+}
+.dogProfile {
+  text-align: center;
+  padding: 30px;
+}
+
+.button {
+  border-radius: 10px;
+  background-color: #abbaba;
+  border-color: #abbaba;
+  color: black;
+  block-size: 25px;
+  font-family:monospace;
+}
+
+.button:hover{
+  background-color:rgb(69, 160, 67);
+  color: white;
+}
+
+.success {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: green; 
+}
+
+.error {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: rgb(199, 25, 25);
+  margin-top: 10px;
+}
